@@ -16,3 +16,14 @@ end
 
 # The method that publishes the sdk to the package manager.  Required.
 configatron.publish_to_package_manager_method = method(:publish_to_package_manager)
+
+
+# Distribution GitHub repo if different from the source repo. Optional.
+configatron.downstream_repos = [
+  DownstreamRepo.new(
+    name="test-downstream",
+    url="https://github.com/braebot/test-downstream.git",
+    branch="master",
+    release_to_github=true
+  )
+]
