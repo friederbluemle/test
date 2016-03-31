@@ -24,6 +24,9 @@ configatron.downstream_repos = [
     name="test-downstream",
     url="https://github.com/braebot/test-downstream.git",
     branch="master",
+    files_to_copy=[],    
+    post_copy_methods=[],
+    build_methods=[],
     release_to_github=true
   )
 ]
